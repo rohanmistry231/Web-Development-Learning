@@ -24,7 +24,7 @@ The HTML section covers the basics of HTML, including:
 - Forms and input elements
 - Semantic HTML
 
-[Learn more about HTML](Html/README.md)
+[Learn more about HTML](HTML/README.md)
 
 ## CSS
 
@@ -34,7 +34,7 @@ The CSS section provides resources on:
 - Flexbox and Grid layout
 - Responsive design
 
-[Learn more about CSS](Css/README.md)
+[Learn more about CSS](CSS/README.md)
 
 ## SCSS
 
@@ -44,7 +44,7 @@ In the SCSS section, you will find:
 - Variables and mixins
 - Functions and operators
 
-[Learn more about SCSS](Scss/README.md)
+[Learn more about SCSS](SCSS/README.md)
 
 ## JavaScript
 
@@ -55,7 +55,7 @@ The JavaScript section includes:
 - ES6+ features
 - Asynchronous JavaScript (Promises, async/await)
 
-[Learn more about JavaScript](JavaScript/README.md)
+[Learn more about JavaScript](JAVASCRIPT/README.md)
 
 ## React.js
 
@@ -67,7 +67,7 @@ The React.js section focuses on:
 - React Router
 - State management with Redux
 
-[Learn more about React.js](React/README.md)
+[Learn more about React.js](REACTJS/README.md)
 
 ## MongoDB
 
