@@ -12,7 +12,8 @@ Welcome to the Web Development Learning Materials repository! This repository co
 6. [MongoDB](#mongodb)
 7. [Mongoose](#mongoose)
 8. [Django](#django)
-9. [How to Use This Repository](#how-to-use-this-repository)
+1. [PUG](#pug)
+1. [How to Use This Repository](#how-to-use-this-repository)
 
 ## HTML
 
@@ -94,6 +95,14 @@ In the Django section, you will find:
 - venv
 
 [Learn more about Django](DJANGO/README.md)
+
+## PUG
+
+In the Django section, you will find:
+- pug basic fundamentals
+- index.pug file
+
+[Learn more about Django](PUG/README.md)
 
 ## How to Use This Repository
 
