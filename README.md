@@ -13,8 +13,6 @@ Welcome to the Web Development Learning Materials repository! This repository co
 7. [Mongoose](#mongoose)
 8. [Django](#django)
 9. [How to Use This Repository](#how-to-use-this-repository)
-10. [Contributing](#contributing)
-11. [License](#license)
 
 ## HTML
 
