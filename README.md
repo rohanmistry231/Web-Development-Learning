@@ -88,6 +88,14 @@ In the Mongoose section, you will find:
 
 [Learn more about Mongoose](Mongoose/README.md)
 
+## Django
+
+In the Django section, you will find:
+- my-site
+- venv
+
+  [Learn more about Mongoose](Django/README.md)
+
 ## How to Use This Repository
 
 Each section is organized into folders corresponding to the technology covered. Inside each folder, you will find:
