@@ -102,7 +102,7 @@ In the Django section, you will find:
 - pug basic fundamentals
 - index.pug file
 
-[Learn more about Django](PUG/README.md)
+[Learn more about Pug](PUG/README.md)
 
 ## How to Use This Repository
 
