@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in css : static (default) , absolute , relative , fixed and sticky</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box1{
+            /* absolute : relative to the position of its first parent (container) : desi language : absolute means te tena parent position thi left top margin set karse nai k eni normal positon thi */
+            position: absolute;
+            top: 34px;
+            left: 134px;
+        }
+        #box2
+        {            
+            /* sticky : sticky means apde scroll karie to e apde set kareli position prj stick thai jai  */
+            position: sticky;
+            top: 3px;
+            float: right;
+        }
+        #box3{
+            /* relative : relative to its normal position and will leave a gap at its normal position : desi language : relative means apde top left k kai pan karie to e eni normal position thi change thai*/
+            position: relative;
+            top: 34px;
+            left: 34px;
+        }
+        #box4{
+            /* fixed : means eni position fix thai jase relative to window. */
+            position: fixed;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

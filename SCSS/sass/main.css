@@ -1,0 +1,49 @@
+/*  CSS Super Powers
+    1: operators
+    2: variables
+    3: nesting
+    4: mixin
+    5: parameters
+    6 : partials   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.main_header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: bisque;
+}
+.main_header h1 {
+  color: brown;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+.main_header h1:hover {
+  color: black;
+}
+.main_header h1::after {
+  content: "own's SCSS";
+}
+.main_header p {
+  color: brown;
+  font-size: 4rem;
+  letter-spacing: 1.2rem;
+  text-transform: capitalize;
+}
+.main_header p:hover {
+  color: black;
+}
+.main_header p::after {
+  content: "Rohan";
+}/*# sourceMappingURL=main.css.map */

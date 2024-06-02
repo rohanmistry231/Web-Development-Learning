@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'IM Fell English SC', serif;
+            background: #2b323c;
+        }
+        .container{
+            color: #fff;
+            display: flex;
+        }
+        .container h1{
+            font-size: 80px;
+            font-weight: 600;
+        }
+        span{
+            color: #fff724;
+            font-size: 100px;
+            font-weight: 10;
+        }
+        h1{
+            font-size: 60px;
+            margin: 200px 0px 0px 40px;
+        }
+        div p{
+            color: darkseagreen;
+            font-size: 80px;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<body>
+    <div class="container">
+        <h1>I'm <span class="auto-type"></span></h1>
+    </div>
+    <div class="container">
+        <p class="type"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ['Graphics Designer','3D Modeler','Web Developer','UIUX Designer'],
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop:true
+        });
+        var type = new Typed(".type",{
+            strings: ['I am a Graphics Designer and I want to work with best graphics designing team from where i learn new things and grow my self as well as provide my knowledge people who want to gain knowledge about Graphics Designing.'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+</html>

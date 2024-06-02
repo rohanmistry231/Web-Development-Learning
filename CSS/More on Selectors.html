@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>More on selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* ama div ni andar na koi pn P tag ma css apply thai jase */
+    /* div li p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+
+    /* ama div pachhina tarat pachhi avta p tag ma j css apply thase */
+    /* div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+
+    /* ama div pehlana tarat pehla avta p tag ma j css apply thase */
+    /* div + p{
+        color: white;
+        background-color: rgb(238, 137, 137);
+    } */
+
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p> this is another paragraph inside li</p></li> 
+                <li>this will not get affected</li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="own.js"></script>
+</head>
+    <base href="https://shefali.dev" target="_blank" />
+    <h1>Basic tags</h1>
+    <!-- paragraph - p tag --> <br/>
+    <p>lorem4</p><!-- After pressing enter - output : <p>Lorem ipsum dolor sit.</p> --> <br/>
+    <hr> <!--hr makers ruler--> <br/>
+    <p>hey my name is own <strong>now i am in strong tag </strong><em>now i am in em tag </em></p> <!--em means emphasize--> <br/>
+    <!-- anchor - a tag --> <br/>
+    <a href="/nature.jpg" target="_blank">i am b.jpg</a>
+    <br>
+    <a href="ba.jpg" target="_blank">target = _blank is used for open in new window</a>
+    <br>
+    <img src="/nature.jpg" alt="error loading image">
+    <!-- list - li : ordered list (ol) / unordered list (ul) --> <br/>
+    <h1>List</h1>
+    <ul>
+        <li type="circle">i am first</li>
+        <li type="square">i am second</li>
+        <li type="field circle">i am third</li>
+    </ul>
+    <ol type="1">
+        <li>i am first</li>
+        <li>i am second</li>
+        <li>i am third</li>
+    </ol>
+    <ol type="A">
+        <li>i am first</li>
+        <li>i am second</li>
+        <li>i am third</li>
+    </ol>
+    <ol type="a">
+        <li>i am first</li>
+        <li>i am second</li>
+        <li>i am third</li>
+    </ol>
+    <ol type="I">
+        <li>i am first</li>
+        <li>i am second</li>
+        <li>i am third</li>
+    </ol>
+    <ol type="i">
+        <li>i am first</li>
+        <li>i am second</li>
+        <li>i am third</li>
+    </ol>
+    <!-- table --> <br/>
+    <h1>HTML table</h1>
+    <table style="border: 1px solid black;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Own</td>
+                <td>0</td>
+                <td>graphics designer</td>
+            </tr>
+            <tr>
+                <td>Rohan</td>
+                <td>1</td>
+                <td>Ai engineer</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>2</td>
+                <td>content designer</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- form --> <br/>
+    <h1>Form</h1>
+    <form action="backend.php">
+        Name : <input type="text"> <!-- input tag is inline element-->
+        Role : <input type="text">
+        <hr>
+        <div>
+            <label for="name">Name :</label> <input type="text" name="myName" id="name"> <!-- label is used with id's if you click on Name : then you direct link to text--> <br/>
+        </div><br>
+        <div>
+            Role : <input type="text" name="myRole">
+        </div><br>
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div><br>
+        <div>
+            Address : <textarea name="myAddress" cols="5" rows="5"></textarea>
+        </div><br>
+        <div>
+            Date : <input type="date" name="myDate">
+        </div><br>
+        <div>
+            <label for="car">Car :</label>
+            <select name="myCar" id="car">
+                <option value="Indica">Indica</option>
+                <option value="swift" selected>Swift</option>
+            </select>
+        </div><br>
+        <div>
+            Bonus : <input type="number" name="myNumber">
+        </div><br>
+        <div>
+            Are you eligible ? : <input type="checkbox" name="myEligibilty">
+            i am checked : <input type="checkbox" name="myEligibilty" checked>
+        </div><br>
+        <div>
+            Gender : Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div><br>
+        <div>
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </div>
+    </form>
+    <!-- Inline & Block elements --> <br/>
+    <h1>Inline and Block elements</h1>
+    <p style="border: 3px solid red;">this is a paragraph</p> <p style="border: 3px solid blue;">this is also a paragraph</p> <!-- p is block element stores a block--> <br/>
+    <span style="border: 3px solid red;">this is a paragraph</span> <span style="border: 3px solid red;">this is also a paragraph</span> <!--span is inline element thats why it comes in one line--> <br/>
+    <!-- je akhi line lei lei te block element and je khali potani jaga lei lei te inline element--> <br/>
+    <h5>lets see which tags are inline and block</h5>
+    <div style="border: 3px solid red;">helo i am in div</div><br>
+    <strong style="border: 3px solid red;">i am in strong</strong><br>
+    <a style="border: 3px solid red;">helo i am in anchor tag</a>
+    <a style="border: 3px solid red;">helo i am also in anchor tag</a>
+    <em style="border: 3px solid red;">i am in emphasize tag</em><br>
+    <li style="border: 3px solid red;">i am in list tag</li><br>
+    <img src="img.jpg" alt="i am not present" style="border: 3px solid red;">
+    <!-- Ids and Classes --> <br/>
+    <h1>Ids and Classes</h1>
+    <div id="mainbox" class="redBg">
+        this is mainbox
+    </div>
+    <!-- id is uniqely identified in every tag one id can't use in another tag --> <br/>
+    <!-- class is a group of tag in which you can change anything can apply in those classes you can apply more than one classes to a single tag--> <br/>
+    <!-- . is used for class and # is used for id--> <br/>
+    <!-- if you text span. and press enter output : <span class=""></span>--> <br/>
+    <!-- if you text span# and press enter output : <span id=""></span>--> <br/>
+    <!-- if you text div.mainbox and press enter output :     <div class="mainbox"></div>--> <br/>
+    <!-- if you text span.mainbox.container.lastclass and press enter output :     <span class="mainbox container lastclass"></span>--> <br/>
+    <!-- Entities --> <br/>
+    <h1>Entities</h1>
+    <p>if you want to print space then you can use&nbsp;: i&nbsp;am&nbsp;nbsp.</p> <!--&nbsp = non breaking space--> <br/>
+    <p>if you want to print less than or greater than or those words are reserved in html then you can use entities like &lt;p&gt;.</p>
+    <p>this is pound &pound;.</p>
+    <p>this is copyright &copy;.</p>
+    <!-- for more entites you can search "html entites reference" --> <br/>
+    <!-- HTML Semantic Elements --> <br/>
+    <!-- A semantic element clearly describes its meaning to both the browser and the developer. --> <br/>
+    <!-- Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. --> <br/>
+    <!-- Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content. --> <br/>
+    <details>
+        <summary>Lorem
+            ipsum
+            dolor
+            sit.
+        </summary>
+    </details>
+    <!-- HTML5 Tags/Elements --> <br/>
+    <!-- Article --> <br/>
+    <!-- The HTML <article> tag is used to represent an article. More specifically, the content within the <article> tag is independent of the other content of the site (even though it can be related). --> <br/>
+    <article
+    style="
+        width: 300px;
+        border: 2px solid gray;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    ">
+        <img
+        src="b.jpg"
+        alt=""
+        width="300"
+        height="250"
+        class="alignnone size-medium wp-image-560930" />
+       
+        <h1>First Article</h1>
+        <p>
+            Sandeep Jain(FOUNDER) An IIT Roorkee alumnus and
+            founder of Own. Apart from Own,
+            he has worked with DE Shaw and Co. as a software
+            developer and JIIT Noida as an assistant professor.
+        </p>
+    </article>
+    <!-- Aside --> <br/>
+    <!-- The <aside> tag is used to describe the main object of the web page in a shorter way like a highlighter. It basically identifies the content that is related to the primary content of the web page but does not constitute the main intent of the primary page. The <aside> tag contains mainly author information, links, related content, and so on. --> <br/>
+    <!-- <aside> vs <div>: Both tags have the same behavior with a different meanings.  --> <br/>
+    <!-- <div>: It defines or creates a division or section in the web page. --> <br/>
+    <!-- <aside>: It does the same job by creating a section or division but it contains only the content that is related to the main web page. --> <br/>
+    <aside>
+        <h1>This is heading text in aside Tag</h1>
+        <p>This is paragraph text in aside Tag</p>
+    </aside>
+    <!-- Audio --> <br/>
+    <!-- The <audio> tag is used to insert an audio into an HTML webpage. --> <br/>
+    <audio controls>
+        <source src="peace.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <!-- Video --> <br/>
+    <!-- The <video> tag is used to embed video content in a document, such as a movie clip or other video streams. --> <br/>
+    <video width="450" height="250" controls preload="auto">
+            <source src="sample.mp4" type="video/mp4"></video>
+    <br>
+    <!-- Canvas --> <br/>
+    <!-- The <canvas> tag in HTML is used to draw graphics on a web page using JavaScript. It can be used to draw paths, boxes, texts, gradients, and add images. By default, it does not contain borders and text. --> <br/>
+        <canvas id = "geeks" height = "200" width = "200"
+        style = "border:1px solid black">
+    </canvas>
+    <script>
+        var c = document.getElementById("geeks");
+        var cx = c.getContext("2d");
+        cx.beginPath();
+        cx.arc(100, 100, 90, 0, 2 * Math.PI);
+        cx.stroke();
+    </script>
+    <!-- Command --> <br/>
+    <!-- The <command> tag define a command button, invoke as per user action. The <command> tag button is used in a special type of operation. The <command> tag is supported only by Internet Explorer. --> <br/>
+    <!-- Datalist --> <br/>
+    <!-- The <datalist> tag is used to provide autocomplete feature in the HTML files. It can be used with an input tag so that users can easily fill the data in the forms using select the data. --> <br/>
+        <form action="">
+            <label>Your Cars Name: </label>
+            <input list="cars">
+
+            <datalist id="cars">
+                <option value="BMW">
+                <option value="Bentley">
+                <option value="Mercedes">
+                <option value="Audi">
+                <option value="Volkswagen">
+            </datalist>     
+        </form>
+    <!-- Details --> <br/>
+    <!-- The <details> tag is used for the content/information which is initially hidden but could be displayed if the user wishes to see it. This tag is used to create an interactive widget that the user can open or close. The content of the details tag is visible when opening the set attributes. The <summary> tag is used with the <detail>s tag for specifying visible heading. --> <br/>
+        <h1>My Details</h1>
+        <details>
+            <summary>My Details</summary>
+        <p>A computer science Student</p>
+            <div>A geek that has a capabiltiy of
+                taking risks and grow eveyday.</div>
+        </details>
+    <!-- Embed --> <br/>
+    <!-- The <embed> tag in HTML is used for embedding external applications which are generally multimedia content like audio or video into an HTML document. It is used as a container for embedding plug-ins such as flash animations. This tag is a new tag in HTML 5, and it requires only starting tag. --> <br/>
+        <q style="color: #00cc00; font-style: italic; ">My video</q> is loading.
+        <br>
+        <embed src="sample.swf">
+    <!-- Figure --> <br/>
+    <!-- The <figure> tag in HTML is used to add self-contained content like illustrations, diagrams, photos, or codes listing in a document. It is related to the main flow, but it can be used in any position of a document and the figure goes with the flow of the document and if remove it then it should not affect the flow of the document. This tag is new in HTML5. --> <br/>
+        <figure>
+            <img src="b.jpg"
+            alt="The Pink Mountain" width="304" height="228">
+            <figcaption>Pink Mountain logo</figcaption>
+        </figure>
+    <!-- Footer --> <br/>
+    <!-- The <footer> tag in HTML is used to define a footer of HTML document. This section contains the footer information (author information, copyright information, carriers, etc). The footer tag is used within the body tag. The <footer> tag is new in the HTML5. The footer elements require a start tag as well as an end tag. --> <br/>
+        <footer>
+            <a href="own.html">About Us</a>|
+            <a href="own.html">Privacy Policy</a>|
+            <a href="own.html">Careers</a>
+            <p>@own, Some rights reserved</p>
+        </footer>
+    <!-- Header --> <br/>
+    <!-- The <header> tag contains information related to the title and heading of the related content. The <header> element is intended to usually contain the section’s heading (an h1-h6 element or an <hgroup> element), but this is not required.The <header> element can also be used to wrap a section’s table of contents, a search form, or any relevant logos. The <header> tag is a new tag in HTML5 and it requires a starting tag as well as an end tag. There can be several <header> elements in one document. A <header> tag cannot be placed within a <footer>, <address> or another <header> element. --> <br/>
+    <header>
+        <h3>This is Header</h3>            
+        <p>Posted by OWN</p>            
+        <p>   
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+    </header>
+    <!-- Hgroup --> <br/>
+    <!-- The <hgroup> tag in HTML stands for heading group and is used to group the heading elements. The <hgroup> tag in HTML is used to wrap one or more heading elements from <h1> to <h6>, such as the headings and sub-headings. The <hgroup> tag requires the starting tag as well as ending tag. --> <br/>
+    <hgroup>
+        <h1>This is the title.</h1>
+        <h2>This is sub-title.</h2>
+    </hgroup>
+    <!-- Mark --> <br/>
+    <!-- The <mark> tag in HTML is used to define the marked text. It is used to highlight the part of the text in a paragraph. The <mark> tag is new in HTML5. --> <br/>
+    <p>
+        <mark>Own:</mark> He is a
+        <mark>computer science</mark> Student
+    </p>
+    <!-- Meter --> <br/>
+    <!-- It is used to define the scale for measurement in a well-defined range and also supports a fractional value. It is also known as a gauge. It is used in Disk use, relevance query result, etc. --> <br/>
+    <p>Meter Tag:</p>
+        Sachin's score:
+        <meter value="5" min="0" max="10">
+          5 out of 10
+        </meter>
+        <br>
+        Laxma score:
+        <meter value="0.5">
+          50% from 100%
+        </meter>
+    <!-- Nav --> <br/>
+    <!-- The <nav> tag is used for declaring the navigational section in HTML documents. Websites typically have sections dedicated to navigational links, which enables users to navigate the site. These links can be placed inside a nav tag. In other words, the nav element represents a section of the page whose purpose is to provide navigational links, either in the current document or to another document. The links in the nav element may point to other web pages or to different sections of the same webpage. It is a semantic element. Common examples of the nav elements are menus, tables, contents, and indexes. --> <br/>
+    <h2> HTML nav Tag</h2>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Interview</a> |
+        <a href="#">Languages</a> |
+        <a href="#">Data Structure</a> |
+        <a href="#">Algorithm</a>
+    </nav>
+    <!-- Output --> <br/>
+    <!-- The <output> tag in HTML is used to represent the result of a calculation performed by the client-side script such as JavaScript. The <output> tag is a new tag in HTML5, and it requires a starting and ends tag. --> <br/>
+    <h2>HTML output Tag</h2>
+    <form oninput="sumresult.value = parseInt(A.value) + parseInt(B.value) + parseInt(C.value)">
+        <input type="number" name="A" value="50" /> +
+        <input type="range" name="B" value="0" /> +
+        <input type="number" name="C" value="30" />
+        <br>
+        Result: <output name="sumresult"></output>
+    </form>
+    <!-- Progress --> <br/>
+    <!-- It is used to represent the progress of a task. It is also defined how much work is done and how much is left to download a thing. It is not used to represent the disk space or relevant query. --> <br/>
+    <h1>Own</h1>
+    Downloading progress for a song:
+    <progress value="57" max="100"></progress>
+    <!-- Ruby --> <br/>
+    <!-- The <ruby> tag in HTML is used to specify the ruby annotation which is a small text, attached with the main text to specify the meaning of the main text. This kind of annotation is used in Japanese publications. --> <br/>
+    <h2><ruby> Tag</h2>
+        <ruby>GFG<rt>Own</rt></ruby>
+    <!-- Section --> <br/>
+    <!-- The <section> tag defines the section of documents such as chapters, headers, footers, or any other sections. The section tag divides the content into sections and subsections. The section tag is used when requirements of two headers or footers or any other section of documents are needed. The <section> tag grouped the generic block of related contents. The main advantage of the section tag is, it is a semantic element, which describes its meaning to both browser and developer. --> <br/>
+        <section>
+            <h1>Own: Section 1</h1> 
+        <p>Content of section 1</p>
+        </section>
+        <section>
+            <h1>Own: Section 2</h1>
+        <p>Content of section 2</p>
+        </section>
+        <section>
+            <h1>Own: Section 3</h1>
+        <p>Content of section 3</p>
+        </section>
+    <!-- Time --> <br/>
+    <!-- The <time> tag is used to display the human-readable date/time. It can also be used to encode dates and times in a machine-readable form. The main advantage for users is that they can offer to add birthday reminders or scheduled events in their calendar’s and search engines can produce smarter search results. --> <br/>
+    <h2><time> Tag</h2>
+            <p>
+                I Wake up at <time>6.00</time> 
+                in every morning.
+            </p>
+            <p>
+                Jawahar lal Nehru birthday is celebrated 
+                on <time datetime="2018-11-14 12:00">
+                    children's day.</time>
+            </p>
+    <!-- WBR --> <br/>
+    <!-- The <wbr> tag in HTML stands for word break opportunity and is used to define the position within the text which is treated as a line break by the browser. It is mostly used when the used word is too long and there are chances that the browser may break lines at the wrong place for fitting the text. --> <br/>
+    <h2><wbr> Tag</h2>
+        <!--  It is mostly used when the used word is too long and 
+              there are chances that the browser may break lines at 
+              the wrong place --> <br/>
+    <p>OWNstandsforROHAN<wbr>acomputerscienceStudent.</p>
+    <!-- New New in HTML Learnings --> <br/>
+    <!-- Email link --> <br/>
+    <a href="mailto:rohanmistry231@gmail.com"> Send Email </a>
+
+    <!-- Phone call link --> <br/>
+    <a href="tel:+8980067632"> Call Us </a>
+
+    <!-- SMS link --> <br/>
+    <a href="sms:+8980067632"> Send SMS </a>
+    <!-- Creating Collapsable Content --> <br/>
+    <details>
+        <summary>Click to expand</summary>
+        <p>This content can be expanded or collapsed.</p>
+      </details>
+      <!-- Grouping Form Elements --> <br/>
+      <form>
+        <fieldset>
+           <legend>Personal details</legend>
+           <label for="firstname">First name:</label>
+           <input type="text" id="firstname" name="firstname" />
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" />
+           <label for="contact">Contact:</label>
+           <input type="text" id="contact" name="contact" />
+           <input type="button" value="Submit" />
+        </fieldset>
+     </form>
+     <!-- Enhancing Drop Down Menus --> <br/>
+     <select>
+        <optgroup label="Fruits">
+           <option>Apple</option>
+           <option>Banana</option>
+           <option>Mango</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+           <option>Tomato</option>
+           <option>Broccoli</option>
+           <option>Carrot</option>
+        </optgroup>
+     </select>
+     <!-- Supporting Mutltiple Sections --> <br/>
+     <input type="file" multiple />
+     <select multiple>
+        <option value="java">Java</option>
+        <option value="javascript">JavaScript</option>
+        <option value="typescript">TypeScript</option>
+        <option value="rust">Rust</option>
+     </select>
+     <!-- Disply text as subscript and superscript --> <br/>
+     <p>
+        H<sub>2</sub>O
+     </p>
+     <p>
+        (a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab
+     </p>
+     <!-- Creating Download Links --> <br/>
+     <a href="b.jpg" download="nature.jpg"> Download PDF </a>
+     <!-- Base and Relative URL's --> <br/>
+     <!-- Base URL --> <br/>
+     <!-- <head>
+        <base href="https://shefali.dev" target="_blank" />
+     </hea> This Part You can see in head section --> <br/>
+     <!-- Relative URL --> <br/>
+     <body>
+        <a href="/blog">Blogs</a>
+        <a href="/get-in-touch">Contact</a>
+     </body>
+     <!-- Control Image Loading --> <br/>
+     <!-- <img src="b.jpg" loading="lazy"> loading has 3 values 1. lazy 2. eager 3. auto --> <br/>
+     <!-- Managing Translation Feature --> <br/>
+     <p translate="no">
+        This text should not be translated.
+      </p>
+      <!-- Setting Maximun Input Length --> <br/>
+      <input type="text" maxlength="4">
+      <!-- Setting Maximun Input Length --> <br/>
+      <input type="text" minlength="3">
+      <!-- Enabling Content Editing --> <br/>
+      <div contenteditable="true">
+        You can edit this content.
+     </div>
+     <!-- Controlling Spell Checking --> <br/>
+     <input type="text" spellcheck="true"/>
+     <!-- Defining Target Behavior for Links --> <br/>
+     <!-- Opens in the same frame --> <br/>
+    <a href="https://shefali.dev" target="_self">Open</a>
+    
+    <!-- Opens in a new window or tab --> <br/>
+    <a href="https://shefali.dev" target="_blank">Open</a>
+    
+    <!-- Opens in the parent frame --> <br/>
+    <a href="https://shefali.dev" target="_parent">Open</a>
+    
+    <!-- Opens in the full body of the window --> <br/>
+    <a href="https://shefali.dev" target="_top">Open</a>
+    
+    <!-- Opens in the named frame --> <br/>
+    <a href="https://shefali.dev" target="framename">Open</a>
+    <!-- Providing Addition Information --> <br/>
+    <p title="World Health Organization">WHO</p>
+    <!-- Accepting Specific File Types --> <br/>
+    <input type="file" accept="image/png, image/jpeg" />
+    <!-- Auto Complete Attribute of Form --> <br/>
+    <input type="text" name="name" autocomplete="on" />
+    <!-- Manage Visibility using hidden Attribute --> <br/>
+    <div hidden>This is hidden content.</div>
+    <!-- Readonly Attribute --> <br/>
+    <input type="text" value="This is readonly." readonly />
+    <!-- Srcset Attribute helps browser to select different images for different screen sizes. --> <br/>
+    <img src="image.jpg" srcset="image.jpg, image-2x.jpg, image-3x.jpg">
+    <!-- Abbreiviation tag  --> <br/>
+    <p>
+        <abbr title="World Wide Web">WWW</abbr> is a fundamental part of the internet.
+    </p>  
+    <!-- Cite tag specifies title of creative work such as quoted content , books ,etc. and also helps to maintain citation formatting and semantics --> <br/>
+    <blockquote>
+        <p>Life is what happens when you're busy making other plans.</p>
+        <cite>John Lennon</cite>
+     </blockquote>
+    <!-- Form Input Types and Attributes --> <br/>
+    <form>
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="lastName"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName">
+        <!-- <input type="text"> defines a single-line text field and allows users to enter single-line text such as names, email addresses, etc. --> <br/>
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text">
+        <!-- <input type="number"> defines a numeric field and allows users to enter numeric values such as age, weight etc. It also includes up and down arrows to increase or decrease the value. --> <br/>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number">
+        <!-- <input type="button" /> defines a button that can be used to trigger javascript functions or any other actions without submitting the form. --> <br/>
+        <input type="button" value="Click Me!">
+        <!-- <input type="email" /> defines an input field that allows users to enter their email addresses. --> <br/>
+        <label for="email-address">Email address:</label>
+        <input type="email" id="email-address" name="email-address">
+        <!-- <input type="password" /> defines a password input field that allows users to enter the password. It hides the characters entered by the user, to protect the user’s privacy. --> <br/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <!-- <input type="checkbox" /> defines a checkbox that allows users to select one or more options from a list. --> <br/>
+        <input type="checkbox" id="option1" name="option1">
+        <label for="option1">One</label><br>
+        <input type="checkbox" id="option2" name="option2">
+        <label for="option2">Two</label><br>
+        <input type="checkbox" id="option3" name="option3">
+        <label for="option3">Three</label>
+        <!-- <input type="radio" /> defines a radio button that allows users to select only one single option from a list. --> <br/>
+        <input type="radio" id="html" name="html" value="html" />
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="css" value="css" />
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="javascript" value="javascript" />
+        <label for="javascript">JavaScript</label>
+        <!-- <input type="tel" /> defines an input field that allows the user to enter a telephone number. --> <br/>
+        <label for="phone-number">Phone number:</label>
+        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <!-- <input type="search" /> defines a single-line text field that allows users to enter their search queries. --> <br/>
+        <label for="search">Search</label>
+        <input type="search" id="search" name="search">
+        <!-- <input type="file" /> defines an input field that allows users to select a file to upload. It can be used to upload files such as images, videos, documents, audio, etc. --> <br/>
+        <label for="profile"> Profile: </label>
+        <input type="file" id="profile" name="profile" accept="image/png, image/jpg" />
+        <!-- <input type="submit" /> defines a button that allows the user to submit the form. --> <br/>
+        <input type="submit" value="Submit">
+        <!-- <input type="color" /> defines a field that allows the user to select a colour. --> <br/>
+        <label for="color">Select Color</label>    
+        <input type="color" id="color" value="#2222eb">
+        <!-- <input type="date" /> defines a field that allows users to select a date. --> <br/>
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <!-- <input type="datetime-local" /> defines a field that allows the user to select a date and time, without time zone information. --> <br/>
+        <label for="datetime">Datetime:</label>
+        <input type="datetime-local" id="datetime">
+        <!-- <input type="hidden" /> defines an input field that is not visible to the user. It serves as a storage mechanism for sensitive information like session tokens or other data that must be included in form submissions but remain invisible and unmodifiable to the user. --> <br/>
+        <input type="hidden" value="5462">
+        <!-- <input type="image" /> defines an image as a submit button. --> <br/>
+        <input type="image" value="Click me" src="b.jpg">
+        <!-- <input type="month" /> defines an input field that allows the user to select month and year. --> <br/>
+        <label for="month">Month:</label>
+        <input type="month" id="month">
+        <!-- <input type="range" /> defines a field that allows the user to select a value within a range of values using a slider. The default range is 0 to 100, but it can be changed using the min, max, and step attributes. --> <br/>
+        <label for="rate">Rate (between 0 and 10):</label>
+        <input type="range" id="rate" name="rate" min="0" max="10">
+        <!-- <input type="reset" /> defines a reset button that resets all form values to their default values. --> <br/>
+        <input type="reset">
+        <!-- <input type="time" /> defines a field that allows users to select the time. --> <br/>
+        <label for="time">Time:</label>
+        <input type="time" id="time">
+        <!-- <input type="url" /> defines a field that allows the user to enter a URL. --> <br/>
+        <label for="url">Your website:</label>
+        <input type="url" id="url" placeholder="https://shefali.dev" pattern="https://.*">
+        <!-- <input type="week" /> defines a field that allows the user to select a week and year. --> <br/>
+        <label for="week">Week:</label>
+        <input type="week" id="week">
+    </form>
+    <!-- Attributes for Input Element --> <br/>
+    <form>
+        <!-- accept attribute specifies a filter for what file type the user can select to upload. --> <br/>
+        <label for="profile"> Profile: </label>
+        <input type="file" id="profile" name="profile" accept="image/*" />
+        <!-- alt attribute specifies an alternate text for the user if for some the image is not available. --> <br/>
+        <input type="image" value="Click me" src="click.jpg" alt="Click">
+        <!-- autocomplete attribute enables or disables the browser’s autocomplete feature for the input field. --> <br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off">
+        <!-- autofocus attribute specifies that an <input> element should automatically get focused when the page loads. It is a boolean attribute. --> <br/>
+        <label for="firstName">First name:</label><br>
+        <!-- <input type="text" id="firstName" name="firstName" autofocus><br> -->
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <input type="submit" value="Submit">
+        <!-- <input type="reset">
+        checked attribute specifies that an <input> element must be checked when the page loads. It is a boolean attribute.
+This can be used only on the <input type="checkbox" /> and <input type="radio" />. --> <br/>
+        <input type="checkbox" name="checkbox1" id="checkbox1" checked>     
+        <label for="checkbox1">One</label><br>
+        <input type="checkbox" name="checkbox2" id="checkbox2">     
+        <label for="checkbox2">Two</label>
+        <!-- dirname attribute enables the submission of the text direction of the input field. --> <br/>
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" dirname="firstName.dir">
+        <input type="submit" value="Submit">
+        <!-- disabled attribute disables the input field, preventing user interaction. --> <br/>
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName" disabled><br>
+        <input type="submit" value="Submit">
+        <!-- formaction attribute determines the destination URL where the input control will be processed upon form submission. This attribute overrides the action attribute of the <form> element.
+
+            The formaction attribute is used with <input type="submit" /> and <input type="image" />. --> <br/>
+    <form action="action_1.html">
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <input type="submit" value="Submit" formaction="action_2.html">
+    </form>
+    <!-- formmethod attribute defines the HTTP method for sending form-data. This attribute overrides the method attribute of the <form> element.
+        The formmethod attribute is used with <input type="submit" /> and <input type="image" />. --> <br/>
+    <form action="action.html" method="get">
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <input type="submit" value="Submit" formmethod="post">
+    </form>
+    <!-- formnovalidate attribute specifies that the form is not to be validated during submission. It is a boolean attribute. The formnovalidate attribute overrides the novalidate attribute of the <form> element.
+        The formnovalidate attribute is used with <input type="submit" />. --> <br/>
+    <form action="action.html">
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <input type="submit" value="Submit" formnovalidate>
+    </form>
+    <!-- height attribute specifies the height of the <input> element. --> <br/>
+    <form action="action.html">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <input type="image" src="submit.png" width="50" height="50">
+    </form>
+    <!-- max attribute specifies the maximum value for an <input> element. This is used with the following input types: number, range, date, datetime-local, month, time and week. --> <br/>
+      <label for="rate">Rate (between 0 and 10):</label>
+      <input type="range" id="rate" name="rate" min="0" max="10">
+      <!-- maxlength attribute specifies the maximum number of characters to allow in the <input> element. --> <br/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" maxlength="10">
+      <!-- min attribute specifies the minimum value for an <input> element. This is used with the following input types: number, range, date, datetime-local, month, time and week. --> <br/>
+      <label for="rate">Rate (between 0 and 10):</label>
+      <input type="range" id="rate" name="rate" min="0" max="10">
+      <!-- minlength attribute specifies the minimum number of characters to allow in the <input> element. --> <br/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" minlength="5">
+      <!-- multiple attribute is a boolean attribute and specifies that the user is allowed to enter more than one value in the <input> element.
+The multiple attribute is used with <input type="email" /> and <input type="file" />. --> <br/>
+      <label for="files">Select files:</label>
+      <input type="file" id="files" name="files" multiple>
+      <!-- name attribute specifies the name of an <input>element. --> <br/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <!-- pattern attribute specifies a pattern for the input value.
+The pattern attribute works with the following input types: text, date, search, url, tel, email, and password. --> <br/>
+      <label for="phone-number">Phone number:</label>
+      <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      <!-- placeholder attribute provides a sample value to guide users on what to input. --> <br/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+      <!-- readonly attribute is a boolean attribute and specifies that an input field is read-only. --> <br/>
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" value="India" readonly>
+  <!-- required attribute ensures that the input field must be filled out before submitting the form. --> <br/>
+  <form>
+    <label for="firstName">First name:</label>
+    <input type="text" id="firstName" name="firstName" required><br>
+    <label for="lastName">Last name:</label>
+    <input type="text" id="lastName" name="lastName"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <input type="submit" value="Submit">
+ </form>
+ <!-- size attribute specifies the visible width, in characters, of an <input> element.
+The size attribute works with the following input types: text, search, tel, url, email, and password. --> <br/>
+ <form>
+    <label for="firstName">First name:</label>
+    <input type="text" id="firstName" name="firstName" size="25"><br>
+    <label for="tel">Telephone number:</label>
+    <input type="tel" id="tel" name="tel" maxlength="10" size="10"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <!-- src attribute specifies the URL of the image. This is used only with <input type="image" /> . --> <br/>
+  <input type="image" value="Click me" src="click.jpg">
+  <!-- step attribute specifies the interval between numbers in an <input> element. This attribute works with the following input types: number, range, date, datetime-local, month, time and week. --> <br/>
+  <label for="rate">Rate (between 0 and 10):</label>
+  <input type="range" id="rate" name="rate" min="0" max="10" step="2">
+  <!-- type attribute specifies the type of an <input> element. --> <br/>
+  <input type="number" />
+  <input type="button" />
+  <input type="email" />
+  <input type="password" />
+  <input type="checkbox" />
+  <!-- value attribute specifies the value of an <input> element. --> <br/>
+  <label for="country">Country</label>
+  <input type="text" id="country" name="country" value="India">
+  <!-- width attribute specifies the width of the <input> element. --> <br/>
+  <form action="action.html">
+    <label for="firstName">First name:</label>
+    <input type="text" id="firstName" name="firstName"><br>
+    <label for="lastName">Last name:</label>
+    <input type="text" id="lastName" name="lastName"><br>
+    <input type="image" src="submit.png" width="50" height="50">
+  </form>
+    </form>
+</body>
+</html>

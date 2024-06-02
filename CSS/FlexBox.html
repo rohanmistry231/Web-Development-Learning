@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;/* Initialize the container as a flex box */
+            
+            /* Flex Properties for a Flex container */
+
+            /* flex-direction: row; /* default value of flex direction is row */
+            /* flex-direction: column; It will Flex with column*/ 
+            /* flex-direction: row-reverse; It will Flex with reverse direction in row*/ 
+            /* flex-direction: column-reverse; It will Flex with reverse direction in column*/ 
+
+            /* flex-wrap: wrap; /* default value of flex-wrap is nowrap means no wrapping is done */
+            /*flex-wrap: wrap-reverse;*/ /* wrap in reverse direction if you zoomout display it will start wrapping in reverse direction */
+
+            /* ShortHand : If you want to use both flex direction and flex wrap in one then you can use flex-flow */
+            /*flex-flow: row wrap;*/
+
+            /* Best way to center your Items Horizontally */
+            /*justify-content: center;
+            /* justify-content: space-between; /* means dont space from right and left corners only space between boxes */
+            /* justify-content: space-evenly;  /* means also space from right and legt corners and space between all boxes */
+            /* justify-content: space-around;  /* means equal space from the left and right of all boxes */
+
+            /* Best way to center your Items Vertically */
+            /* align-items: center; Best way to center your items vertically */
+            /* align-items: flex-start; /* vertically align top means Top */
+            /* align-items: flex-end; /* vertically align end means bottom */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item1{
+            /* Flex Properties for a Flex container */
+            /* order: 2; /* If you want to set the order of box so you can set from these orders */
+            /* Higher the order, later it shows up in the container */
+
+            flex-grow: 2; /* when you grow or zoomoutyour webpage it will  grow in 2 times bigger */
+            /* flex-shrink: 2; /* when you shrink or zoomin your webpage it will  shirnk in 2 times smaller */
+            /* flex-shrink: 2; /* when you shrink or zoomin your webpage it will  shirnk in 2 times smaller */
+        }
+        #item2{
+            /* order: 40; /* here order of item 2 is more than order of item 1 so item 2 will show first */
+            /* flex-grow: 3; /* when you grow or zoom your webpage it will  grow in 3 times bigger */
+            /* flex-shrink: 3; /* when you shrink or zoomin your webpage it will  shirnk in 3 times smaller */
+
+            flex-basis: 320px; /* flex-basis property is use when you want to change default width of flex*/
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+        #item3{
+            /*flex: 2 2 230px; /* it deal with first flex: grow shrink basis together */
+            align-self: center;
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lets Understand FlexBox</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+    </div>
+    <img src="flexbox.png">
+</body>
+</html>

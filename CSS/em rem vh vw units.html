@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 400px;
+            /* height: 344px; */
+            height: 100vh; /* set height exact to size of viewport means actual size of webpage */
+            width: 100vw; /* set width exact to size of viewport means actual size of webpage */
+            text-align: center;
+            border: 2px solid red;
+        }
+        #First{
+            font-size: 3em; /* em means whatever you set your font size is multiply by 10 into pixels of parent class like if i give 10px to container then it will become 10*10 100px : you can see in computed attribute of DOM*/
+            /* padding: 3em; */
+        }
+        #Second{
+            font-size: 3rem; /* rem means whatever you set your font size is multiply by 10 into pixels of html class like if i give 10px to container then it will become 10*10 100px */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="First">This is First heading</h1>
+        <h1 id="Second">This is Second heading</h1>
+        <h1 id="Third">This is Third heading</h1>
+    </div>
+</body>
+</html>

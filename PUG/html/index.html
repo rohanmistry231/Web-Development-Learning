@@ -1,0 +1,81 @@
+<!DOCTYPE html >
+<html> 
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+      p{
+          color : red;
+          text-decoration: underline;
+      }
+      .comment{
+          font-family: sans-serif;
+          line-height: 1.5;
+          padding: 10px;
+          border: 1px solid #555;
+          width: 250px;
+      }
+      
+      .date{ font-size: 85%; text-align: right; }
+      .author{ font-size: 110%; font-weight: bold; }
+      .text{ font-size: 100%; }
+    </style>
+  </head>
+  <body>
+    <h1 id="title" style="text-align:center;color:red;">Welcome to Owns Pug Code</h1>
+    <p class="big-para" style="background-color:white;">
+      This is my paragraph tag
+      and this is a new line
+    </p>
+    <p class="small-para">This is small para.</p>
+    <ul>
+      <li>This is item #1</li>
+      <li>This is item #2</li>
+      <li>This is item #3</li>
+    </ul>
+    <div class="container"></div>
+    <div id="myOnlyDiv"></div>
+    <input type="text" name="First Name" data-js="ok"/>
+    <div class="my-div class1 class2 class3"></div>
+    <div style="color:red;background-color:blue;"></div><img src="myPhoto.png" alt="This is my photo"/>
+    <input type="text" disabled="disabled"/>
+    <h1>For/Each Loop</h1>
+    <p>50-0</p>
+    <p>2-1</p>
+    <p>3-2</p>
+    <p>4-3</p>
+    <p>5-4</p>
+    <p>Rohan-0</p>
+    <p>Dhruv-1</p>
+    <p>Anup-2</p>
+    <p>85-Web Dev</p>
+    <p>76-Software Design</p>
+    <h2>My Web Application</h2>
+    <p>Your last login was 6 minutes ago</p>
+    <p><a href="/login">Log In Again</a></p>
+    <h2>Case Statement in Pug</h2>
+    <!-- orderStatus => Pending || In_Transit || Completed-->
+    <p>Your order has been placed and will be sent shortly.</p>
+    <h1>Include Statement in Pug</h1>
+    <h1>Company Name
+      <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="#">Contact Us</a></nav>
+    </h1>
+    <h1>Mixins in Pug</h1>
+    <!--.comment
+    .date 04-02-2023
+     .author Rohan
+     .text Hey Rohan ! What's going on //
+    
+    -->
+    <!-- now lets create a mixin for commentData and call through js object //-->
+    <div class="comment"><em>(Posted By Admin)</em>
+      <div class="date">04-02-2023</div>
+      <div class="author">Rohan</div>
+      <div class="text">Hey Rohan ! Whats going on</div>
+    </div>
+    <div class="comment">
+      <div class="date">05-02-2023</div>
+      <div class="author">V</div>
+      <div class="text">Hey V ! Whats going on</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- sometimes what happens when you change any value of widht margin or padding or box size anything another values of margin paddings are changes automaticlly to avoid that you can use box-sizing : border-box; -->
+    <style>
+        *{
+            box-sizing: border-box;
+        } /* * is universal selector which can apply css to all elements */
+        .container{
+            background-color:aliceblue;
+            border: 4px solid purple;
+            padding: 10px;
+            padding-top: 40px;
+            padding-left: 100px;
+            margin: 10px;
+            margin-top: 60px;
+            /* if you want to set top right bottom left padding or margin at a time then you can use this code :
+            margin/padding : 10px 10px 10px 10px */
+            /* if you want to set common in top/bottom and left/right then you can use this code :
+            margin/paing : 10px 10px /... y(top/bottom) x(left/right) */
+            border-radius: 20px;
+            width: 600px;
+            /* margin: auto; if you want to set any attribute in center you can use margin as auto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cupiditate pariatur, veniam nesciunt ab autem earum quam. Dolor, error illum!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cupiditate pariatur, veniam nesciunt ab autem earum quam. Dolor, error illum!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cupiditate pariatur, veniam nesciunt ab autem earum quam. Dolor, error illum!</p>
+    </div>
+    </body>
+</html>

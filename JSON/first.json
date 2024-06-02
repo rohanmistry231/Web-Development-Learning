@@ -1,0 +1,12 @@
+{
+    "name" : "Rohan",
+    "score" : 11.75 , 
+    "isAdmin" : false ,
+    "licesne" : null , 
+    "shopItem" : ["food","clothes","sunflower oil"],
+    "myObj" : {
+        "name" : "Rohan",
+        "marks" : 98,
+        "shopItem2" : ["food","clothes",{"a": false}]
+    }
+}

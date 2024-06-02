@@ -1,0 +1,22 @@
+{
+  "name": "inotebook-backend",
+  "version": "1.0.0",
+  "description": "iNotebook - Your notebook on the cloud",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

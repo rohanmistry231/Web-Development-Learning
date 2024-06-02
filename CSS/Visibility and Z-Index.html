@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: green;
+            top: 49px;
+            position: relative;
+            z-index: 1; /* here z-index of box2 is less than box 1 so box 1 is show upside box2 */
+        }
+        #box2{
+            position: relative;
+            background-color: red;
+            top: 14px;
+            z-index: -1;  /* IF z-index of box 1 is less than box 2 then box 2 is show upside box 1 */
+            /* z-index is not work with position: static; and only work with position: relative, absolute , fixed or sticky;*/
+        }
+        #box3{
+            background-color: blue;
+            visibility: hidden; /*visibility: hidden; /*-- Hide From Webpage but dont remove space from webpage*/
+        }
+        #box4{
+            background-color: yellow;
+            display: none; /*display: none; /* Hide From Webpage but also remove space from Webpage */ 
+        }
+        #box5{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*5 - It means that make 5 div with class name box and id box and $ means in range 12345 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+</body>
+</html>

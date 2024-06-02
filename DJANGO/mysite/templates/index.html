@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template is Working</title>
+  </head>
+  <body>
+    <!-- <h1>I am a index.html inside Template Folder</h1>
+    <h2>{{name}} is {{age}} years old</h2> -->
+    <h1>Welcome to the Text Analyazer. Enter your text below</h1>
+    <form action="/analyze" method="get">
+      <textarea
+        name="text"
+        style="
+          margin: 0px;
+          width: 720px;
+          height: 90px;
+          display: block;
+          margin-bottom: 10px;
+        "
+      ></textarea>
+      <input type="checkbox" name="removepunc"> Remove Punctuations <br>
+      <input type="checkbox" name="fullcaps"> Uppercase <br>
+      <input type="checkbox" name="newlineremover"> New Line Remover <br>
+      <input type="checkbox" name="spaceremover"> Space Remover <br>
+      <input type="checkbox" name="charcounter"> Char Counter <br>
+      <button type="submit">Analyze Text</button>
+    </form>
+  </body>
+</html>

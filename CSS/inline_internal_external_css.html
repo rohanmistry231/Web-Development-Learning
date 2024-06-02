@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css types : inline , internal , external</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        p#second{
+            background-color: brown !important; 
+            /* important means first priority */
+        }
+    </style> <!--internal css--> 
+</head>
+<body>
+    <p id="first" style="background-color: rgb(42, 165, 97);">i am own</p> <!--inline css-->
+    <p id="second">i am own</p>
+    <p id="third">i am own</p>
+</body>
+</html>

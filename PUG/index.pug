@@ -1,0 +1,110 @@
+mixin comment(commentData)
+    .comment
+        if commentData.postByAdmin
+            em (Posted By Admin)
+        .date= commentData.date
+        .author= commentData.author
+        .text= commentData.text 
+
+doctype html 
+html 
+    head
+        link(rel="stylesheet", href="style.css")
+        style.
+            p{
+                color : red;
+                text-decoration: underline;
+            }
+            .comment{
+                font-family: sans-serif;
+                line-height: 1.5;
+                padding: 10px;
+                border: 1px solid #555;
+                width: 250px;
+            }
+
+            .date{ font-size: 85%; text-align: right; }
+            .author{ font-size: 110%; font-weight: bold; }
+            .text{ font-size: 100%; }
+    body
+        h1#title(style="text-align:center;color:red;") Welcome to Owns Pug Code
+        - const pStyles = { "background-color" : "white"};
+        p.big-para(style=pStyles). 
+            This is my paragraph tag
+            and this is a new line
+        p.small-para. 
+            This is small para.
+        ul
+            li This is item #1
+            li This is item #2
+            li This is item #3
+        .container
+        #myOnlyDiv
+        input(type="text" name="First Name" data-js=`${ 5 > 2 ? "ok" : "NOT OK"}`)
+
+        - const myClasses = ["class1","class2","class3"]
+        div.my-div(class=myClasses)
+
+        - const myStyles = {"color" : "red" , "background-color" : "blue"}
+        div(style=myStyles)
+
+        -const myAttributes = {"src" : "myPhoto.png", "alt": "This is my photo"}
+        img&attributes(myAttributes)
+
+        input(type="text" disabled)
+
+        h1 For/Each Loop
+        each n, i in [50,2,3,4,5]
+            p= n + '-' + i
+        - const names = ["Rohan","Dhruv","Anup"];
+        each n, i in names
+            p= n + '-' + i
+        - const grades = {"Web Dev": 85, "Software Design": 76};
+        for n, i in grades
+            p= n + '-' + i
+        else
+            strong "No valuers are here!"
+        
+        h2 My Web Application
+        - let user = { name: "Rohan" , loggedIn: flase  , lastLogin: 6 }
+        if user.loggedIn
+            p
+                | Welcome back,
+                strong #{ user.name }
+        else if user.lastLogin < 10
+            p Your last login was #{ user.lastLogin} minutes ago
+            p
+                a(href="/login") Log In Again
+        else 
+            a(href="/login") Log In
+
+        h2 Case Statement in Pug
+        // orderStatus => Pending || In_Transit || Completed
+        - const orderStatus = 'Pending'
+
+        case orderStatus
+            when 'Pending'
+                p Your order has been placed and will be sent shortly.
+            when 'In_Transit'
+                p Your order is on the move - you should receive it soon!.
+            when 'Completed'
+                p Your order has been Completed.
+            default
+                p Sorry! We aren't sure what happened with your order...
+
+        h1 Include Statement in Pug
+        include includes/nav
+
+        h1 Mixins in Pug
+        //.comment
+           .date 04-02-2023
+            .author Rohan
+            .text Hey Rohan ! What's going on //
+
+        // now lets create a mixin for commentData and call through js object //
+        
+        - const r = { postByAdmin : true , date : '04-02-2023', author: 'Rohan', text : 'Hey Rohan ! Whats going on' }
+        +comment(r)
+
+        - const v = { date : '05-02-2023', author: 'V', text : 'Hey V ! Whats going on' }
+        +comment(v)

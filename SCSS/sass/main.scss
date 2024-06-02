@@ -1,0 +1,74 @@
+/*  CSS Super Powers
+    1: operators
+    2: variables
+    3: nesting
+    4: mixin
+    5: parameters
+    6 : partials   */
+
+@import "mixin";
+@import "var";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+$bg_color: bisque; // declaring variables
+$font_color: black;
+
+@mixin flex_prop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin commoncode($par1){
+    color: brown;
+    font-size: 2rem + 2rem;
+    letter-spacing: $par1;
+    text-transform: capitalize;
+}
+
+.main_header{
+    width: 100vw;
+    height: 100vh;
+    @include flex_prop();
+    background-color: $bg_color;
+    // that's how we can use variables in SCSS
+
+    h1{
+        color: brown;
+        font-size: 2rem + 2rem;
+        letter-spacing: 0.3rem; 
+        // html font size is 10px so 1 rem = 10 px now here we con add 2 rem + 2 rem = 40px using + operator
+        // you can use any operators like +,-,*,/,%,etc.
+        // It will automatically calculate 2+2 rem = 4rem in main.css file
+        &:hover{
+            color: black;
+        }
+        // if we are applying different properties on same tage then we can nesting through {&} means h1=& in nesting
+        // main benifit of & is if our class name is too long like hey_bro_i_am_a_long_class then it is difficult to write hey_bro_i_am_a_long_class : hover that's why & is useful.
+        // & means it will automatically map its parent tag here is h1
+        &::after{
+            content: "own's SCSS";
+        }
+    }
+    // this is how we can do nesting
+    // this will automatically write .main_header h1{} in main.css 
+    p{
+        @include commoncode(1.2rem);
+        &:hover{
+            color: black;
+        }
+        &::after{
+            content: "Rohan";
+        }
+    }
+    // this will automatically write .main_header p{} in main.css 
+}

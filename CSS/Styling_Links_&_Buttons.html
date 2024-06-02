@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none; /* it will remove underlines of links */
+        }
+        a:hover{
+            background-color: brown;
+            border: 2px solid aliceblue;
+            transition: 0.8s;
+        }
+        a:visited{
+            color: chocolate;
+            background-color: black;
+            border: 2px solid aliceblue;
+        }
+        a:active{
+            color: red;
+            background-color: blue;
+            border: 2px solid rgb(255, 0, 217);
+        }
+        .btn{
+            font-family: cursive;
+            color: aliceblue;
+            background-color:blueviolet;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="count1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, provident magni? Quod et temporibus facilis velit! Suscipit recusandae ea dolorum eum rerum, esse, vitae modi ducimus similique doloremque laboriosam quia repellendus! Rem, in temporibus!</p>
+        <a href="b.jpg" class="btn">Read more</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+</html>
