@@ -55,7 +55,7 @@ The JavaScript section includes:
 - ES6+ features
 - Asynchronous JavaScript (Promises, async/await)
 
-[Learn more about JavaScript](JAVASCRIPT/README.md)
+[Learn more about JavaScript](JAVA%20SCRIPT/README.md)
 
 ## React.js
 
@@ -67,7 +67,7 @@ The React.js section focuses on:
 - React Router
 - State management with Redux
 
-[Learn more about React.js](REACTJS/README.md)
+[Learn more about React.js](REACT%20JS/README.md)
 
 ## MongoDB
 
@@ -77,7 +77,7 @@ The MongoDB section covers:
 - Indexing and aggregation
 - Data modeling
 
-[Learn more about MongoDB](MongoDB/README.md)
+[Learn more about MongoDB](MONGODB/README.md)
 
 ## Mongoose
 
@@ -87,7 +87,7 @@ In the Mongoose section, you will find:
 - Querying the database
 - Validation and middleware
 
-[Learn more about Mongoose](Mongoose/README.md)
+[Learn more about Mongoose](MONGOOSE%20CONNECT/README.md)
 
 ## Django
 
@@ -95,7 +95,7 @@ In the Django section, you will find:
 - my-site
 - venv
 
-  [Learn more about Mongoose](Django/README.md)
+  [Learn more about Mongoose](DJANGO/README.md)
 
 ## How to Use This Repository
 
