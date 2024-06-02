@@ -77,7 +77,7 @@ The MongoDB section covers:
 - Indexing and aggregation
 - Data modeling
 
-[Learn more about MongoDB](MONGODB/README.md)
+[Learn more about MongoDB](MONGO%20DB/README.md)
 
 ## Mongoose
 
@@ -92,10 +92,10 @@ In the Mongoose section, you will find:
 ## Django
 
 In the Django section, you will find:
-- my-site
+- mysite
 - venv
 
-  [Learn more about Mongoose](DJANGO/README.md)
+[Learn more about Django](DJANGO/README.md)
 
 ## How to Use This Repository
 
