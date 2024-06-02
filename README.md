@@ -11,9 +11,10 @@ Welcome to the Web Development Learning Materials repository! This repository co
 5. [React.js](#reactjs)
 6. [MongoDB](#mongodb)
 7. [Mongoose](#mongoose)
-8. [How to Use This Repository](#how-to-use-this-repository)
-9. [Contributing](#contributing)
-10. [License](#license)
+8. [Django](#django)
+9. [How to Use This Repository](#how-to-use-this-repository)
+10. [Contributing](#contributing)
+11. [License](#license)
 
 ## HTML
 
