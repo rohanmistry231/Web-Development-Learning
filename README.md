@@ -104,18 +104,3 @@ Each section is organized into folders corresponding to the technology covered. 
 - Additional resources and references
 
 Feel free to explore each folder and follow the materials at your own pace.
-
-## Contributing
-
-Contributions are welcome! If you have any improvements, suggestions, or additional materials that you think would benefit others, please feel free to create a pull request or open an issue.
-
-To contribute:
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/new-material`)
-3. Commit your changes (`git commit -am 'Add new material'`)
-4. Push to the branch (`git push origin feature/new-material`)
-5. Create a new Pull Request
-
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
