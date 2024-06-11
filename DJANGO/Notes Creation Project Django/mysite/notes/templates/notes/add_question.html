@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Question to {{ category.name }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'notes/styles.css' %}">
+</head>
+<body>
+    <h1>Add Question to {{ category.name }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Question</button>
+    </form>
+    <a href="{% url 'category_detail' category.pk %}">Back to {{ category.name }}</a>
+</body>
+</html>

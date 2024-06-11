@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ category.name }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'notes/styles.css' %}">
+</head>
+<body>
+    <h1>{{ category.name }}</h1>
+    <a href="{% url 'add_question' category.pk %}">Add Question</a>
+    <ul>
+        {% for question in questions %}
+        <li>
+            <strong>{{ question.question_text }}</strong><br>
+            {{ question.answer_text }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>

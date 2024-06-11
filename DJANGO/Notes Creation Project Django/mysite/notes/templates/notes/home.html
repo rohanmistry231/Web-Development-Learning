@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Notes</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'notes/styles.css' %}">
+</head>
+<body>
+    <h1>Categories</h1>
+    <a href="{% url 'add_category' %}">Add Category</a>
+    <ul>
+        {% for category in categories %}
+        <li><a href="{% url 'category_detail' category.pk %}">{{ category.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

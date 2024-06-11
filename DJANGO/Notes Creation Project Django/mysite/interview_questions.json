@@ -1,0 +1,28 @@
+[
+    {
+        "category": "Data Structures",
+        "questions": [
+            {
+                "question_text": "What is a linked list?",
+                "answer_text": "A linked list is a linear data structure where each element is a separate object."
+            },
+            {
+                "question_text": "Explain the difference between stack and queue.",
+                "answer_text": "Stack follows LIFO (Last In, First Out) principle, while queue follows FIFO (First In, First Out) principle."
+            }
+        ]
+    },
+    {
+        "category": "Algorithms",
+        "questions": [
+            {
+                "question_text": "What is a binary search algorithm?",
+                "answer_text": "Binary search is a search algorithm that finds the position of a target value within a sorted array."
+            },
+            {
+                "question_text": "Explain the time complexity of quicksort.",
+                "answer_text": "The average time complexity of quicksort is O(n log n), but the worst-case complexity is O(n^2)."
+            }
+        ]
+    }
+]
