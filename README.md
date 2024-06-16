@@ -91,6 +91,7 @@ In the Mongoose section, you will find:
 ## Django
 
 In the Django section, you will find:
+- Interview Questions Project
 - mysite
 - venv
 
