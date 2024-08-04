@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": "94ac",
+      "name": "Rohan Mistry",
+      "email": "rohanmistry231@gmail.com",
+      "department": "Electrical Engineering",
+      "number": "8980067123"
+    },
+    {
+      "id": "1bb4",
+      "name": "jay Baisane",
+      "email": "jay@gmail.com",
+      "department": "Mechanical Engineering",
+      "number": "8970054862"
+    },
+    {
+      "id": "97cf",
+      "name": "Sanjay Mistry",
+      "email": "sanjaymistry740@gmail.com",
+      "department": "Electronic and Communication",
+      "number": "7800654531"
+    },
+    {
+      "id": "c405",
+      "name": "Ritesh Chaudhari",
+      "email": "ritesh@gmail.com",
+      "department": "Information Technology",
+      "number": "7899954200"
+    },
+    {
+      "id": "5d5c",
+      "name": "Nilam Chaudhari",
+      "email": "nilam@gmail.com",
+      "department": "Web Designing",
+      "number": "9866045462"
+    },
+    {
+      "id": "ff6b",
+      "name": "Yash Chaudhari",
+      "email": "yash@gmail.com",
+      "department": "Cloud Engineering",
+      "number": "4588078700"
+    },
+    {
+      "id": "0656",
+      "name": "Amisha Mistry",
+      "email": "amisha@gmail.com",
+      "department": "Food and Delivery",
+      "number": "9890078760"
+    },
+    {
+      "id": "b536",
+      "name": "harmish patel",
+      "email": "hamish@gmail.com",
+      "department": "computer",
+      "number": "123456789"
+    },
+    {
+      "id": "5be2",
+      "name": "Pritesh Panchal",
+      "email": "priteshpanchal@gmail.com",
+      "department": "Mechanical Engineering",
+      "number": "8167879004"
+    },
+    {
+      "id": "b7d4",
+      "name": "pratham patel",
+      "email": "pratham@gmail.com",
+      "department": "Computer Science and Engineering",
+      "number": "8979953562"
+    }
+  ]
+}

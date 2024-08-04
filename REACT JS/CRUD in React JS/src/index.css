@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  display: float;
+  /* border: 2px solid red; */
+}
+
+.header .btn{
+  float: right;
+  /* border: 2px solid red; */
+}
+
+.logo{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.header h1{
+  margin: 10px 0px;
+  font-size: 30px;
+}
+
+.table{
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid grey;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(199, 199, 199);
+}
+
+.title{
+  text-align: center;
+  display: inline;
+}
+.read-data{
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 10px;
+  box-shadow: -2px -2px 4px rgb(179, 179, 179);
+  border-radius: 10px;
+}
+
+.read-data:hover{
+  box-shadow: 2px 2px 4px rgb(101, 159, 101);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.read-btn{
+  margin-left: 14px;
+  font-size: 17px;
+}
+
+.read-data-label{
+  font-weight: bold;
+}
+
+.create-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form{
+  padding: 30px;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(186, 186, 186);
+}
+
+.create-input{
+  background-color: rgb(228, 228, 228);
+}
+.create-input:hover{
+  box-shadow: 0px 0px 6px green;
+}
+.create-label{
+  font-size: 18px;
+  margin: 6px 0px;
+}
+
+.read-box{
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 10px;
+}
+
+.read-box .read-title{
+  padding: 20px 20px;
+}
+
+.input-group{
+  margin-left: 200px;
+}
+
+.create-button{
+  margin-left: 20px;
+  height: 40px;
+}
+
+.export-button{
+  margin-left: 380px;
+  height: 40px;
+}
